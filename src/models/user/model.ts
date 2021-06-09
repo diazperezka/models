@@ -21,6 +21,8 @@ const UserModel = (sequelize: Sequelize) => {
     },
     token: {
       type: DataTypes.UUID,
+      allowNull: true,
+      defaultValue: null,
     },
   });
 };
